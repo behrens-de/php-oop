@@ -9,10 +9,11 @@
 class Mensch{
 
     // Eigenschaften
-    private $name; 
-    private $alter;
-    private $groesse;
-    private $gewicht;
+    // sichbarkeitsmodifizierer|datentyp|bezeichner
+    private string $name; 
+    private int $alter;
+    private int $groesse;
+    private float $gewicht;
 
     // Konstruktor
     public function __construct(string $lastname){
@@ -26,3 +27,10 @@ class Mensch{
     }
 
 }
+
+
+// Klasse instanzieren
+$jan = new Mensch('Behrens');
+
+print gettype($jan);
+var_dump($jan);
